@@ -1,6 +1,6 @@
 const TEMPO = 90;
 const BUFFER_SIZE = 10;
-const MAX_TURNOS = 10; // 5 por time
+const MAX_TURNOS = 2; // 1 por time
 
 let g = {
   pontos: { A: 0, B: 0 },

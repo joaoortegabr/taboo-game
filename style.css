@@ -272,7 +272,7 @@
   }
 
   .btn-acao:active:not(:disabled) { transform: scale(.96); }
-  .btn-acao:disabled { opacity: .25; cursor: not-allowed; transform: none; }
+  .btn-acao:disabled { visibility: hidden; cursor: not-allowed; transform: none; }
 
   .btn-acao span.sub {
     font-family: 'DM Sans', sans-serif;
@@ -312,7 +312,7 @@
     padding: 18px;
     border: none;
     border-radius: 14px;
-    background: var(--preto);
+    background: var(--azul);
     color: #fff;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.4rem;
@@ -321,7 +321,7 @@
     transition: all .12s;
   }
 
-  .btn-iniciar:hover:not(:disabled) { background: #333; }
+  .btn-iniciar:hover:not(:disabled) { background: #1258cc; }
   .btn-iniciar:active:not(:disabled) { transform: scale(.98); }
   .btn-iniciar:disabled { opacity: .3; cursor: not-allowed; }
 
