@@ -224,7 +224,7 @@ function resetarJogo() {
   document.getElementById('timerDisplay').className = 'timer-numero idle';
   document.getElementById('timerProg').style.width = '100%';
   document.getElementById('timerProg').className = 'timer-prog';
-  document.getElementById('btnIniciar').textContent = 'INICIAR TURNO';
+  document.getElementById('btnIniciar').textContent = 'INICIAR PARTIDA';
   document.getElementById('btnIniciar').style.display = '';
   const logo = document.querySelector('.logo');
   logo.textContent = 'TABOO';

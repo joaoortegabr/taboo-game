@@ -148,7 +148,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
-    margin-bottom: 24px;
+    margin-bottom: 14px;
     width: 100%;
   }
 
@@ -190,7 +190,6 @@
   /* ─── CARTA ─── */
   .carta-wrap {
     width: 100%;
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -227,6 +226,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    line-height: 1.2;
     gap: 4px;
     width: 100%;
   }
