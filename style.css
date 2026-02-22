@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 100px;
+    padding-bottom: 220px;
   }
 
   /* ─── GOOGLE ADS BANNER TOP ─── */
@@ -189,6 +189,7 @@
 
   /* ─── CARTA ─── */
   .carta-wrap {
+    flex: 1;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -196,7 +197,6 @@
     justify-content: center;
     padding: 8px 0 6px;
     gap: 8px;
-    min-height: 200px;
   }
 
   .palavra-principal {
@@ -242,11 +242,17 @@
 
   /* ─── BOTÕES ─── */
   .btns-wrap {
-    width: 100%;
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    max-width: 520px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
-    padding: 8px 0 10px;
+    padding: 0 20px 10px;
+    z-index: 35;
   }
 
   .btn-acao {
