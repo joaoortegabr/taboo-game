@@ -195,14 +195,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px 0 10px;
-    gap: 10px;
-    min-height: 280px;
+    padding: 8px 0 6px;
+    gap: 8px;
+    min-height: 200px;
   }
 
   .palavra-principal {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(1.8rem, 7vw, 3rem);
+    font-size: clamp(2.2rem, 9vw, 3.5rem);
     letter-spacing: 4px;
     line-height: 1;
     text-align: center;
@@ -232,7 +232,7 @@
   }
 
   .taboo-palavra {
-    font-size: clamp(1.2rem, 4.5vw, 1.6rem);
+    font-size: clamp(1.5rem, 5.5vw, 2rem);
     font-weight: 400;
     color: var(--cinza-texto);
     letter-spacing: 1px;
@@ -246,7 +246,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
-    padding: 16px 0 20px;
+    padding: 8px 0 10px;
   }
 
   .btn-acao {
@@ -369,7 +369,7 @@
     overflow-y: auto;
     background: var(--fundo);
     border-top: 1px solid var(--cinza-borda);
-    padding: 10px 20px 14px;
+    padding: 6px 0 10px;
     box-shadow: 0 -4px 16px rgba(0,0,0,.07);
   }
 
@@ -383,8 +383,8 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 6px 10px;
-    border-radius: 8px;
+    padding: 7px 16px;
+    border-radius: 0;
     font-size: .78rem;
     animation: fadeIn .2s ease;
   }

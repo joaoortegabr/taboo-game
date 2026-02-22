@@ -143,7 +143,7 @@ function fimTurno() {
   }
 
   const proximo = g.turno === 'A' ? 'B' : 'A';
-  document.getElementById('btnIniciar').textContent = `INICIAR TURNO — TIME ${proximo}`;
+  document.getElementById('btnIniciar').textContent = `INICIAR RODADA — TIME ${proximo}`;
   document.getElementById('btnIniciar').style.display = '';
 
   const logo = document.querySelector('.logo');
@@ -182,9 +182,9 @@ function adicionarLog(tipo, time, palavra, taboos) {
   const tabooTxt = taboos.length ? ` <span class="log-taboos">(${taboos.join(', ')})</span>` : '';
 
   if (tipo === 'acerto') {
-    item.innerHTML = `<span class="log-badge">Time ${time}</span> ✓ Acertou <b>${palavra}</b>${tabooTxt}`;
+    item.innerHTML = `<span class="log-badge">Time ${time}</span> Acertou <b>${palavra}</b>${tabooTxt}`;
   } else {
-    item.innerHTML = `<span class="log-badge">Time ${time}</span> ✕ Errou <b>${palavra}</b>${tabooTxt}`;
+    item.innerHTML = `<span class="log-badge">Time ${time}</span> Errou <b>${palavra}</b>${tabooTxt}`;
   }
 
   lista.prepend(item);
