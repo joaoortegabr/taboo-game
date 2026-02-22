@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Palavra & Cia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER COM PLACAR -->
+<header>
+  <button class="btn-reset" onclick="resetarJogo()" title="Reiniciar jogo">↺</button>
+  <div class="logo">TABOO</div>
+  <div class="placar-header">
+    <div class="placar-time">
+      <div class="placar-label">Time A</div>
+      <div class="placar-valor azul" id="placarA">0</div>
+    </div>
+    <div class="placar-sep">·</div>
+    <div class="placar-time">
+      <div class="placar-label">Time B</div>
+      <div class="placar-valor laranja" id="placarB">0</div>
+    </div>
+  </div>
+</header>
+
+<!-- ÁREA PRINCIPAL -->
+<main>
+
+  <!-- TIMER -->
+  <div class="timer-wrap">
+    <div class="timer-numero idle" id="timerDisplay">60</div>
+    <div class="timer-barra">
+      <div class="timer-prog" id="timerProg" style="width:100%"></div>
+    </div>
+  </div>
+
+  <!-- CARTA -->
+  <div class="carta-wrap" id="cartaWrap">
+    <div class="palavra-principal aguardando" id="palavraPrincipal">TABOO</div>
+    <div class="divisor" id="divisor" style="opacity:0"></div>
+    <div class="taboo-lista" id="tabooLista"></div>
+  </div>
+
+  <!-- BOTÕES: Errou (esq, vermelho) | Acertou (dir, verde) -->
+  <div class="btns-wrap">
+    <button class="btn-acao btn-errou" id="btnErrou" onclick="registrar('errou')" disabled>
+      ✕ Errou
+      <span class="sub">+1 pro adversário</span>
+    </button>
+    <button class="btn-acao btn-acertou" id="btnAcertou" onclick="registrar('acerto')" disabled>
+      ✓ Acertou
+      <span class="sub">+1 ponto</span>
+    </button>
+  </div>
+
+  <!-- INICIAR / RESET -->
+  <div class="iniciar-wrap">
+    <button class="btn-iniciar" id="btnIniciar" onclick="iniciarTurno()">INICIAR RODADA</button>
+  </div>
+
+
+</main>
+
+<!-- LOG -->
+<div class="log-wrap" id="logWrap">
+  <button class="log-toggle" id="btnLog" onclick="toggleLog()">Histórico ▾</button>
+  <div class="log-conteudo" id="logConteudo">
+    <div class="log-lista" id="logLista"></div>
+  </div>
+</div>
+
+<!-- BANNER ADS RODAPÉ -->
+<div class="ads-banner-bottom">
+  <!-- Google AdSense — substitua pelo seu código de anúncio -->
+  Espaço para anúncio (320×100 / 728×90)
+</div>
+
+<!-- MODAL FIM DE JOGO -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <div class="modal-sub">🏆 Fim de jogo</div>
+    <div class="modal-vencedor" id="modalVencedor">TIME A</div>
+    <div class="modal-placar" id="modalPlacar"></div>
+    <button class="btn-iniciar" onclick="resetarJogo()">JOGAR NOVAMENTE</button>
+  </div>
+</div>
+
+<script src="words.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
